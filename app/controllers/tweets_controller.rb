@@ -5,4 +5,5 @@ class TweetsController < ApplicationController
     tweets = TwitterClient.user_timeline(tweeter)#.map(&:text)
     render json: {tweets: tweets}
   end
+
 end
